@@ -1,0 +1,38 @@
+create web directory ./checkpoints/summer2winter_yosemite/web...
+learning rate 0.0002000 -> 0.0002000
+/home/akanksha/venv/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+(epoch: 1, iters: 100, time: 0.427, data: 0.180) D_A: 0.264 G_A: 0.348 cycle_A: 3.009 idt_A: 0.954 D_B: 0.318 G_B: 0.359 cycle_B: 2.097 idt_B: 1.342
+(epoch: 1, iters: 200, time: 0.429, data: 0.002) D_A: 0.314 G_A: 0.295 cycle_A: 2.315 idt_A: 1.296 D_B: 0.281 G_B: 0.236 cycle_B: 2.819 idt_B: 1.033
+(epoch: 1, iters: 300, time: 0.429, data: 0.003) D_A: 0.300 G_A: 0.359 cycle_A: 2.627 idt_A: 0.909 D_B: 0.292 G_B: 0.249 cycle_B: 2.008 idt_B: 1.240
+(epoch: 1, iters: 400, time: 1.573, data: 0.002) D_A: 0.250 G_A: 0.198 cycle_A: 3.073 idt_A: 0.940 D_B: 0.355 G_B: 0.254 cycle_B: 2.503 idt_B: 1.522
+Traceback (most recent call last):
+  File "train.py", line 52, in <module>
+    model.optimize_parameters()   # calculate loss functions, get gradients, update network weights
+  File "/home/akanksha/pytorch-CycleGAN-and-pix2pix/models/cycle_gan_model.py", line 192, in optimize_parameters
+    self.backward_D_A()      # calculate gradients for D_A
+  File "/home/akanksha/pytorch-CycleGAN-and-pix2pix/models/cycle_gan_model.py", line 144, in backward_D_A
+    self.loss_D_A = self.backward_D_basic(self.netD_A, self.real_B, fake_B)
+  File "/home/akanksha/pytorch-CycleGAN-and-pix2pix/models/cycle_gan_model.py", line 134, in backward_D_basic
+    pred_fake = netD(fake.detach())
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 166, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/akanksha/pytorch-CycleGAN-and-pix2pix/models/networks.py", line 583, in forward
+    return self.model(input)
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/nn/modules/instancenorm.py", line 57, in forward
+    return F.instance_norm(
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/nn/functional.py", line 2326, in instance_norm
+    _verify_spatial_size(input.size())
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/nn/functional.py", line 2290, in _verify_spatial_size
+    for i in range(2, len(size)):
+KeyboardInterrupt

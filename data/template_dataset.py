@@ -12,8 +12,8 @@ You need to implement the following functions:
     -- <__len__>: Return the number of images.
 """
 from data.base_dataset import BaseDataset, get_transform
-# from data.image_folder import make_dataset
-# from PIL import Image
+from data.image_folder import make_dataset
+from PIL import Image
 
 
 class TemplateDataset(BaseDataset):
@@ -47,7 +47,8 @@ class TemplateDataset(BaseDataset):
         # save the option and dataset root
         BaseDataset.__init__(self, opt)
         # get the image paths of your dataset;
-        self.image_paths = []  # You can call sorted(make_dataset(self.root, opt.max_dataset_size)) to get all the image paths under the directory self.root
+        self.image_paths = sorted(make_dataset(self.root, opt.max_dataset_size))  # You can call sorted(make_dataset(self.root, opt.max_dataset_size)) to get all the image paths under the directory self.root
+        print(self.image_paths)
         # define the default transform function. You can use <base_dataset.get_transform>; You can also define your custom transform function
         self.transform = get_transform(opt)
 
@@ -65,7 +66,13 @@ class TemplateDataset(BaseDataset):
         Step 3: convert your data to a PyTorch tensor. You can use helpder functions such as self.transform. e.g., data = self.transform(image)
         Step 4: return a data point as a dictionary.
         """
-        path = 'temp'    # needs to be a string
+        path = self.image_paths[index]    # needs to be a string
+        print('AB: ')
+        print(path)
+        image = Image.open(path).convert('RGB')
+        print(image.shape)
+        print('AB: ')
+        #exit()
         data_A = None    # needs to be a tensor
         data_B = None    # needs to be a tensor
         return {'data_A': data_A, 'data_B': data_B, 'path': path}

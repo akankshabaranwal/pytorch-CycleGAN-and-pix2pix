@@ -1,0 +1,48 @@
+create web directory ./checkpoints/leaves/web...
+learning rate 0.0002000 -> 0.0002000
+AB:
+./datasets/leaves/cherry_leafB/454_cc.png
+AB:
+./datasets/leaves/cherry_leafB/568_bl.png
+AB:
+./datasets/leaves/cherry_leafB/447_tl.png
+AB:
+./datasets/leaves/cherry_leafB/47_tl.png
+AB:
+./datasets/leaves/cherry_leafB/525_tl.png
+AB:
+./datasets/leaves/cherry_leafB/70_tl.png
+AB:
+AB:
+./datasets/leaves/cherry_leafB/591_tr.png
+./datasets/leaves/cherry_leafB/435_br.png
+AB:
+./datasets/leaves/cherry_leafB/84_br.png
+/home/akanksha/venv/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+Traceback (most recent call last):
+  File "train.py", line 44, in <module>
+    for i, data in enumerate(dataset):  # inner loop within one epoch
+  File "/home/akanksha/pytorch-CycleGAN-and-pix2pix/data/__init__.py", line 90, in __iter__
+    for i, data in enumerate(self.dataloader):
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/_utils.py", line 434, in reraise
+    raise exception
+AttributeError: Caught AttributeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/akanksha/pytorch-CycleGAN-and-pix2pix/data/template_dataset.py", line 72, in __getitem__
+    print(image.shape)
+  File "/home/akanksha/venv/lib/python3.8/site-packages/PIL/Image.py", line 517, in __getattr__
+    raise AttributeError(name)
+AttributeError: shape

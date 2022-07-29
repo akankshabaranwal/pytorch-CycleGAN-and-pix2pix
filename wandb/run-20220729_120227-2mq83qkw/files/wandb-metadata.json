@@ -1,0 +1,34 @@
+{
+    "os": "Linux-5.4.0-121-generic-x86_64-with-glibc2.27",
+    "python": "3.8.0",
+    "heartbeatAt": "2022-07-29T10:02:29.214231",
+    "startedAt": "2022-07-29T10:02:27.982573",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1080",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--dataroot",
+        "./datasets/leaves",
+        "--name",
+        "leaves",
+        "--model",
+        "cycle_gan",
+        "--use_wandb",
+        "--dataset_mode",
+        "template"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/akankshabaranwal/pytorch-CycleGAN-and-pix2pix.git",
+        "commit": "9bcef69d5b39385d18afad3d5a839a02ae0b43e7"
+    },
+    "email": "akankshabar@gmail.com",
+    "root": "/home/akanksha/pytorch-CycleGAN-and-pix2pix",
+    "host": "akanksha",
+    "username": "akanksha",
+    "executable": "/home/akanksha/venv/bin/python"
+}

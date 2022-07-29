@@ -1,0 +1,45 @@
+create web directory ./checkpoints/summer2winter_yosemite/web...
+learning rate 0.0002000 -> 0.0002000
+/home/akanksha/venv/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+(epoch: 1, iters: 100, time: 0.427, data: 0.367) D_A: 0.259 G_A: 0.291 cycle_A: 2.343 idt_A: 0.721 D_B: 0.320 G_B: 0.316 cycle_B: 1.610 idt_B: 0.924
+(epoch: 1, iters: 200, time: 0.432, data: 0.002) D_A: 0.247 G_A: 0.307 cycle_A: 1.916 idt_A: 0.402 D_B: 0.273 G_B: 0.365 cycle_B: 0.936 idt_B: 0.895
+(epoch: 1, iters: 300, time: 0.430, data: 0.002) D_A: 0.303 G_A: 0.333 cycle_A: 1.359 idt_A: 0.498 D_B: 0.265 G_B: 0.466 cycle_B: 1.110 idt_B: 0.672
+(epoch: 1, iters: 400, time: 1.571, data: 0.002) D_A: 0.282 G_A: 0.282 cycle_A: 1.703 idt_A: 0.353 D_B: 0.235 G_B: 0.271 cycle_B: 0.842 idt_B: 0.822
+(epoch: 1, iters: 500, time: 0.432, data: 0.002) D_A: 0.225 G_A: 0.296 cycle_A: 1.367 idt_A: 1.549 D_B: 0.231 G_B: 0.226 cycle_B: 2.898 idt_B: 0.569
+(epoch: 1, iters: 600, time: 0.431, data: 0.002) D_A: 0.262 G_A: 0.274 cycle_A: 0.694 idt_A: 1.112 D_B: 0.237 G_B: 0.318 cycle_B: 2.125 idt_B: 0.326
+(epoch: 1, iters: 700, time: 0.432, data: 0.003) D_A: 0.219 G_A: 0.226 cycle_A: 0.840 idt_A: 0.339 D_B: 0.268 G_B: 0.368 cycle_B: 0.818 idt_B: 0.376
+(epoch: 1, iters: 800, time: 0.852, data: 0.003) D_A: 0.257 G_A: 0.317 cycle_A: 1.145 idt_A: 1.254 D_B: 0.222 G_B: 0.398 cycle_B: 2.471 idt_B: 0.502
+(epoch: 1, iters: 900, time: 0.429, data: 0.002) D_A: 0.279 G_A: 0.376 cycle_A: 0.717 idt_A: 0.608 D_B: 0.256 G_B: 0.204 cycle_B: 1.513 idt_B: 0.315
+(epoch: 1, iters: 1000, time: 0.431, data: 0.003) D_A: 0.317 G_A: 0.369 cycle_A: 1.140 idt_A: 0.564 D_B: 0.237 G_B: 0.228 cycle_B: 1.301 idt_B: 0.600
+(epoch: 1, iters: 1100, time: 0.427, data: 0.003) D_A: 0.221 G_A: 0.472 cycle_A: 1.326 idt_A: 0.630 D_B: 0.247 G_B: 0.263 cycle_B: 1.294 idt_B: 0.513
+(epoch: 1, iters: 1200, time: 1.177, data: 0.002) D_A: 0.311 G_A: 0.187 cycle_A: 1.095 idt_A: 0.830 D_B: 0.495 G_B: 0.386 cycle_B: 1.947 idt_B: 0.480
+(epoch: 1, iters: 1300, time: 0.432, data: 0.006) D_A: 0.227 G_A: 0.362 cycle_A: 0.535 idt_A: 0.846 D_B: 0.263 G_B: 0.267 cycle_B: 1.547 idt_B: 0.210
+(epoch: 1, iters: 1400, time: 0.425, data: 0.003) D_A: 0.306 G_A: 0.320 cycle_A: 0.798 idt_A: 0.766 D_B: 0.293 G_B: 0.506 cycle_B: 1.379 idt_B: 0.402
+(epoch: 1, iters: 1500, time: 0.426, data: 0.002) D_A: 0.294 G_A: 0.168 cycle_A: 1.671 idt_A: 0.384 D_B: 0.286 G_B: 0.348 cycle_B: 0.819 idt_B: 0.700
+(epoch: 1, iters: 1600, time: 0.838, data: 0.002) D_A: 0.293 G_A: 0.552 cycle_A: 1.032 idt_A: 0.556 D_B: 0.176 G_B: 0.187 cycle_B: 1.610 idt_B: 0.459
+End of epoch 1 / 200 	 Time Taken: 656 sec
+learning rate 0.0002000 -> 0.0002000
+(epoch: 2, iters: 32, time: 0.431, data: 0.003) D_A: 0.254 G_A: 0.480 cycle_A: 0.604 idt_A: 1.014 D_B: 0.153 G_B: 0.305 cycle_B: 2.029 idt_B: 0.307
+(epoch: 2, iters: 132, time: 0.431, data: 0.002) D_A: 0.272 G_A: 0.202 cycle_A: 0.799 idt_A: 0.596 D_B: 0.231 G_B: 0.458 cycle_B: 1.208 idt_B: 0.341
+(epoch: 2, iters: 232, time: 0.433, data: 0.002) D_A: 0.313 G_A: 0.113 cycle_A: 0.981 idt_A: 0.396 D_B: 0.297 G_B: 0.430 cycle_B: 0.892 idt_B: 0.406
+(epoch: 2, iters: 332, time: 1.518, data: 0.002) D_A: 0.262 G_A: 0.206 cycle_A: 1.200 idt_A: 0.323 D_B: 0.298 G_B: 0.421 cycle_B: 0.729 idt_B: 0.580
+(epoch: 2, iters: 432, time: 0.433, data: 0.002) D_A: 0.258 G_A: 0.181 cycle_A: 0.789 idt_A: 0.297 D_B: 0.285 G_B: 0.258 cycle_B: 0.678 idt_B: 0.359
+(epoch: 2, iters: 532, time: 0.430, data: 0.002) D_A: 0.294 G_A: 0.159 cycle_A: 0.727 idt_A: 0.437 D_B: 0.112 G_B: 0.482 cycle_B: 1.124 idt_B: 0.223
+(epoch: 2, iters: 632, time: 0.429, data: 0.002) D_A: 0.236 G_A: 0.303 cycle_A: 0.856 idt_A: 0.665 D_B: 0.190 G_B: 0.470 cycle_B: 1.718 idt_B: 0.357
+Traceback (most recent call last):
+  File "train.py", line 52, in <module>
+    model.optimize_parameters()   # calculate loss functions, get gradients, update network weights
+  File "/home/akanksha/pytorch-CycleGAN-and-pix2pix/models/cycle_gan_model.py", line 188, in optimize_parameters
+    self.optimizer_G.step()       # update G_A and G_B's weights
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 65, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/optim/optimizer.py", line 88, in wrapper
+    return func(*args, **kwargs)
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/optim/adam.py", line 133, in step
+    F.adam(params_with_grad,
+  File "/home/akanksha/venv/lib/python3.8/site-packages/torch/optim/_functional.py", line 94, in adam
+    denom = (exp_avg_sq.sqrt() / math.sqrt(bias_correction2)).add_(eps)
+KeyboardInterrupt
